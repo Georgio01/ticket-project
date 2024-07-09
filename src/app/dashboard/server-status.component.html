@@ -1,0 +1,19 @@
+<article>
+    <header>
+        <img src="status.png" alt="Asignal symbol" />
+        <h2>Server S tatus</h2>
+    </header>
+
+    <div>
+        @if (currentStatus==='online'){
+            <p>Servers are online</p>
+            <p>All systems are operational.</p>
+        } @else if(currentStatus==='ofline'){
+            <p>Servers are offline</p>
+            <p>Functionality should be restord soon.</p>
+        } @else{
+            <p>Srever status is unknown</p>
+            <p>Fetching server status failed.</p>
+        }
+    </div>
+</article>
